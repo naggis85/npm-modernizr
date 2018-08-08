@@ -31,7 +31,8 @@
   },
   "bundleDependencies": false,
   "devDependencies": {
-    "modernizr": "^3.6.0"
+    "modernizr": "^3.6.0",
+    "rimraf": "^2.6.2"
   },
   "deprecated": false,
   "description": "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.",
@@ -53,7 +54,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:modernizr": "modernizr -c modernizr.config-required.json -d ./"
+    "modernizr": "rimraf modernizr.js && modernizr -c modernizr.config-required.json -d ./"
   },
   "version": "2.8.3"
 }

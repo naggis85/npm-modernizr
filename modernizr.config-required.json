@@ -5,6 +5,7 @@
   "options": [
   ],
   "feature-detects": [
-    "css/supports"
+    "css/supports",
+    "ES5/array"
   ]
 }
