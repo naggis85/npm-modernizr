@@ -1,6 +1,6 @@
 /*!
  * modernizr v3.6.0
- * Build https://modernizr.com/download?-supports-dontmin
+ * Build https://modernizr.com/download?-cors-es5array-supports-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -226,6 +226,25 @@ Check if browser implements ECMAScript 5 Array per specification.
       Array.prototype.reduceRight &&
       Array.isArray);
   });
+
+/*!
+{
+  "name": "Cross-Origin Resource Sharing",
+  "property": "cors",
+  "caniuse": "cors",
+  "authors": ["Theodoor van Donge"],
+  "notes": [{
+    "name": "MDN documentation",
+    "href": "https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS"
+  }],
+  "polyfills": ["pmxdr", "ppx", "flxhr"]
+}
+!*/
+/* DOC
+Detects support for Cross-Origin Resource Sharing: method of performing XMLHttpRequests across domains.
+*/
+
+  Modernizr.addTest('cors', 'XMLHttpRequest' in window && 'withCredentials' in new XMLHttpRequest());
 
 
   // Run each test

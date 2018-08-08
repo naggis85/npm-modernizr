@@ -6,6 +6,7 @@
   ],
   "feature-detects": [
     "css/supports",
-    "es5/array"
+    "es5/array",
+    "cors"
   ]
 }
