@@ -1,6 +1,6 @@
 /*!
  * modernizr v3.6.0
- * Build https://modernizr.com/download?-es5array-smil-dontmin
+ * Build https://modernizr.com/download?-supports-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -172,68 +172,29 @@
     }
   }
   ;
-
-  /**
-   * Object.prototype.toString can be used with every object and allows you to
-   * get its class easily. Abstracting it off of an object prevents situations
-   * where the toString property has been overridden
-   *
-   * @access private
-   * @function toStringFn
-   * @returns {function} An abstracted toString function
-   */
-
-  var toStringFn = ({}).toString;
-  
 /*!
 {
-  "name": "SVG SMIL animation",
-  "property": "smil",
-  "caniuse": "svg-smil",
-  "tags": ["svg"],
+  "name": "CSS Supports",
+  "property": "supports",
+  "caniuse": "css-featurequeries",
+  "tags": ["css"],
+  "builderAliases": ["css_supports"],
   "notes": [{
-  "name": "W3C Synchronised Multimedia spec",
-  "href": "https://www.w3.org/AudioVideo/"
+    "name": "W3 Spec",
+    "href": "http://dev.w3.org/csswg/css3-conditional/#at-supports"
+  },{
+    "name": "Related Github Issue",
+    "href": "https://github.com/Modernizr/Modernizr/issues/648"
+  },{
+    "name": "W3 Info",
+    "href": "http://dev.w3.org/csswg/css3-conditional/#the-csssupportsrule-interface"
   }]
 }
 !*/
 
-  // SVG SMIL animation
-  Modernizr.addTest('smil', function() {
-    return !!document.createElementNS &&
-      /SVGAnimate/.test(toStringFn.call(document.createElementNS('http://www.w3.org/2000/svg', 'animate')));
-  });
-
-/*!
-{
-  "name": "ES5 Array",
-  "property": "es5array",
-  "notes": [{
-    "name": "ECMAScript 5.1 Language Specification",
-    "href": "http://www.ecma-international.org/ecma-262/5.1/"
-  }],
-  "polyfills": ["es5shim"],
-  "authors": ["Ron Waldon (@jokeyrhyme)"],
-  "tags": ["es5"]
-}
-!*/
-/* DOC
-Check if browser implements ECMAScript 5 Array per specification.
-*/
-
-  Modernizr.addTest('es5array', function() {
-    return !!(Array.prototype &&
-      Array.prototype.every &&
-      Array.prototype.filter &&
-      Array.prototype.forEach &&
-      Array.prototype.indexOf &&
-      Array.prototype.lastIndexOf &&
-      Array.prototype.map &&
-      Array.prototype.some &&
-      Array.prototype.reduce &&
-      Array.prototype.reduceRight &&
-      Array.isArray);
-  });
+  var newSyntax = 'CSS' in window && 'supports' in window.CSS;
+  var oldSyntax = 'supportsCSS' in window;
+  Modernizr.addTest('supports', newSyntax || oldSyntax);
 
 
   // Run each test

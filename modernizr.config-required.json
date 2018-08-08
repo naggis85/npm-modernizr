@@ -1,0 +1,10 @@
+{
+  "classPrefix": "",
+  "enableJSClass": false,
+  "enableClasses": false,
+  "options": [
+  ],
+  "feature-detects": [
+    "css/supports"
+  ]
+}
