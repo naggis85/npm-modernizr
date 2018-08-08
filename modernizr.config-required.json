@@ -6,6 +6,6 @@
   ],
   "feature-detects": [
     "css/supports",
-    "ES5/array"
+    "es5/array"
   ]
 }
