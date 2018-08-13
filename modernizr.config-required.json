@@ -12,6 +12,7 @@
     "test/window/matchmedia",
     "test/xdomainrequest",
     "test/customevent",
-    "test/style/scoped"
+    "test/style/scoped",
+    "test/inputtypes"
   ]
 }
