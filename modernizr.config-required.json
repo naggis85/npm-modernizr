@@ -10,6 +10,7 @@
     "test/css/supports",
     "test/es5/specification",
     "test/window/matchmedia",
-    "test/xdomainrequest"
+    "test/xdomainrequest",
+    "test/customevent"
   ]
 }
