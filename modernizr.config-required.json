@@ -11,6 +11,7 @@
     "test/es5/specification",
     "test/window/matchmedia",
     "test/xdomainrequest",
-    "test/customevent"
+    "test/customevent",
+    "test/style/scoped"
   ]
 }
