@@ -10,9 +10,9 @@
     "test/css/supports",
     "test/es5/specification",
     "test/window/matchmedia",
-    "test/xdomainrequest",
     "test/customevent",
     "test/style/scoped",
-    "test/inputtypes"
+    "test/inputtypes",
+    "test/network/xhr2"
   ]
 }
