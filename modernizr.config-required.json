@@ -1,12 +1,15 @@
 {
   "classPrefix": "",
+  "minify": true,
   "enableJSClass": false,
   "enableClasses": false,
   "options": [
   ],
   "feature-detects": [
-    "css/supports",
-    "es5/array",
-    "cors"
+    "test/cors",
+    "test/css/supports",
+    "test/es5/specification",
+    "test/window/matchmedia",
+    "test/xdomainrequest"
   ]
 }
