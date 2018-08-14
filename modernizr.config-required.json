@@ -18,6 +18,7 @@
     "test/css/flexbox",
     "test/css/flexwrap",
     "test/dom/classlist",
-    "test/css/checked"
+    "test/css/checked",
+    "test/typed-arrays"
   ]
 }
