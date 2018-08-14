@@ -14,6 +14,8 @@
     "test/style/scoped",
     "test/inputtypes",
     "test/network/xhr2",
-    "test/css/boxsizing"
+    "test/css/boxsizing",
+    "test/css/flexbox",
+    "test/css/flexwrap"
   ]
 }
