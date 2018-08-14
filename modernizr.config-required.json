@@ -16,6 +16,8 @@
     "test/network/xhr2",
     "test/css/boxsizing",
     "test/css/flexbox",
-    "test/css/flexwrap"
+    "test/css/flexwrap",
+    "test/dom/classlist",
+    "test/css/checked"
   ]
 }
