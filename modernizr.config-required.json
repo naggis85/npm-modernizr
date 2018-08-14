@@ -13,6 +13,7 @@
     "test/customevent",
     "test/style/scoped",
     "test/inputtypes",
-    "test/network/xhr2"
+    "test/network/xhr2",
+    "test/css/boxsizing"
   ]
 }
