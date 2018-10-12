@@ -1,8 +1,9 @@
 {
   "classPrefix": "",
-  "minify": true,
+  "minify": false,
   "enableJSClass": false,
-  "enableClasses": false,
+  "enableClasses": true,
+  "usePrefixes" : false,
   "options": [
   ],
   "feature-detects": [
